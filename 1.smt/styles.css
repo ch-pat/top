@@ -10,5 +10,51 @@ p, h1, h2, h3, h4, h5, h6, li {
 }
 
 h1 {
+    font-size: 32px;
     color: red;
+    width: 1ch;
+    display: block;
+    font-family: monospace;
+    margin-bottom: 25px;
+    border: 2px solid red;
+    margin: 0 100px -180px auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 5px red double;
+    font-family: monospace;
+    width: fit-content;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    border-bottom: 2px red dotted;
+    width: fit-content
+}
+
+
+ul {
+    display: flex;
+}
+
+ul > li {
+    margin-right: 20px;
+    margin-left: 5px;
+    border: 2px dotted red
+    
+}
+
+a:link {
+    color: hotpink;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    background-color: rgb(66, 2, 2);
 }
