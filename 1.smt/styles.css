@@ -9,15 +9,32 @@ p, h1, h2, h3, h4, h5, h6, li {
     font-weight: 500;
 }
 
+.page-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title {
+    flex: 1 1;
+    border-left: 4px double red;
+    height: fit-content;
+    width: fit-content;
+    margin: 20px
+}
+
+.content {
+    flex: 5 1;
+    padding: 15px;
+}
+
 h1 {
     font-size: 32px;
     color: red;
     width: 1ch;
-    display: block;
     font-family: monospace;
     margin-bottom: 25px;
     border: 2px solid red;
-    margin: 0 100px -180px auto;
+    margin: 0 100px 0px auto;
 }
 
 h2 {
