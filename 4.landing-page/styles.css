@@ -53,9 +53,6 @@ body > * {
     
 }
 
-.hero-image, .hero-text-block {
-    width: 50%;
-}
 
 .hero-text-block {
     display: flex;
