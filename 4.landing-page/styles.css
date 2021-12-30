@@ -1,0 +1,163 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px
+}
+
+
+h1 {
+    color: #e5e7eb;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 0px;
+    flex: 1 1 auto;
+}
+
+body > * {
+    padding: 15px 200px;
+
+}
+
+.header, .hero, .footer {
+    background-color: #1f2937;
+}
+
+.header a, .hero-subtext, button, .footer {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.hero-text {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    
+}
+
+.hero-image, .hero-text-block {
+    width: 50%;
+}
+
+.hero-text-block {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.hero-image {
+    margin-left: 50px;
+    min-width: 300px;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+button {
+    background-color: #3882f6;
+    padding: 4px 25px;
+    border-radius: 8px;
+    border-style: none;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.images-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-with-subtext {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    text-align: center;
+    align-items: center;
+    width: min-content;
+}
+
+.img-with-subtext img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: #3882f6 solid 4px;
+    padding: 0px;    
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote h1 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote p {
+    text-align: end;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.action {
+    background-color: #3882f6;
+    margin: 80px 150px;
+    border-radius: 8px;
+    padding: 40px 100px;
+}
+
+.action-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.action-text h1, .action-text p {
+    color: #e5e7eb;
+    margin: 2px;
+}
+
+.action button {
+    border: 2px white solid;
+}
+
+.footer {
+    text-align: center;
+}
