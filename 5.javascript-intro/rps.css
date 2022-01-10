@@ -1,0 +1,99 @@
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.game {
+    border: darkred 5px solid;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: darkred;
+    border-radius: 5px;
+    border-style: none;
+    padding: 4px 15px;
+    box-shadow: black 5px 5px;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+#tally {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#tally .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    transform: rotate(10deg);
+    border: black 3px solid;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.score {
+    background-color: darkred;
+    border-radius: 15px;
+}
+
+.score p {
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button:active {
+    animation: shake 0.4s infinite;
+}
+
+@keyframes shake {
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}

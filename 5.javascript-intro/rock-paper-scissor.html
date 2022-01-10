@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="rps.css">
 </head>
-<script src="rps.js"></script>
-<body style="background-color: bisque; display: flex; justify-content: center;">
-    <p style="font-weight: bold; text-align: center; margin-top: 150px; width: fit-content; background-color: blue; color: bisque; border-radius: 5px; padding: 15px;">Open the dev console (F12) to play Rock, Paper, Scissors.</p>
+<script src="rps.js" defer></script>
+<body>
+    <div class="game">
+        <p id="welcome">Welcome to Rock, Paper, Scissors! Make your choice.</p>
+        <div class="buttons">
+
+        </div>
+        <p id="log"></p>
+        <div id="tally">
+            <div class="score">
+                <p>You</p>
+                <p id="you">0</p>
+            </div>
+            <div class="score">
+                <p>Computer</p>
+                <p id="computer">0</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
