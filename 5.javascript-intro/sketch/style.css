@@ -16,9 +16,9 @@ h1 {
 }
 
 #menu {
+    display: flex;
     border:black 3px solid;
-    width: 20rem
-
+    width: 25rem;
 }
 
 #grid {
@@ -31,11 +31,12 @@ h1 {
 }
 
 .square {
-    border: 1px black solid;
+    border: 1px black dotted;
 }
 
 #menu {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     padding: 45px;
@@ -49,6 +50,26 @@ h1 {
     padding: 15px 30px;
     border-style: none;
     border-radius: 15px;
-    border-bottom: black 2px solid;
+    border-bottom: black 3px solid;
     cursor: pointer;
+}
+
+#sizes, #colors {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#ccolor {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border: 2px black solid;
+}
+
+#current {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
 }
