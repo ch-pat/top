@@ -1,4 +1,5 @@
 # Exercise 07 - tempConversion
+## [Link to solution](./tempConversion.js)
 
 Write two functions that convert temperatures from Fahrenheit to Celsius, and vice versa:
 ```

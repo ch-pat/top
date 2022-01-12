@@ -1,4 +1,5 @@
 # Exercise 04 - removeFromArray
+## [Link to solution](./removeFromArray.js)
 
 Implement a function that takes an array and some other arguments then removes the other arguments from that array:
 

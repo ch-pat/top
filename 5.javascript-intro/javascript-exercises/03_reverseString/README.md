@@ -1,4 +1,5 @@
 # Exercise 03 - Reverse a String
+## [Link to solution](./reverseString.js)
 
 Pretty simple, write a function called `reverseString` that returns its input, reversed!
 
