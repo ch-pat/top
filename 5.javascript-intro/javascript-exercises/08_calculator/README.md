@@ -1,4 +1,5 @@
 # Exercise 08 - Calculator
+## [Link to solution](./calculator.js)
 
 The goal for this exercise is to create a calculator that does the following:
 
