@@ -1,4 +1,5 @@
 # Exercise 09 - Palindromes
+## [Link to solution](./palindromes.js)
 
 Write a function that determines whether or not a given string is a palindrome.
 
