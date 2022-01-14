@@ -82,7 +82,6 @@ let calculatorState = {
 
 function numberClick(event) {
     const n = event.target.textContent;
-    console.log(n)
     if (calculatorState.overwrite) {
         calculatorState.overwrite = false;
         display.textContent = "";
@@ -123,12 +122,41 @@ function queueUp(event) {
     calculatorState.overwrite = true;
     let operand = event.target.textContent;
     calculatorState.operand = operand;
-    console.log("state after calc:" + calculatorState.first + " " + calculatorState.operand + " " + calculatorState.second);
 }
 
+function queueUpKbd(event) {
+    let operand;
+    console.log(event.key)
+    if (event.key == "Enter") {
+        operand = "=";
+    } else if (!("+*/-=".includes(event.key))) {
+        return;
+    } else {
+        operand = event.key;
+    }
+    calculatorState.calculate();
+    calculatorState.overwrite = true;
+    calculatorState.operand = operand;
+}
 
 for (let btn of numberButtons) {
     btn.addEventListener('click', numberClick);
+}
+
+function numberClickKbd(event) {
+    const n = event.key;
+    if (!("1234567890.".includes(n))) {
+        return;
+    }
+
+    if (calculatorState.overwrite) {
+        calculatorState.overwrite = false;
+        display.textContent = "";
+    }
+    if (n == "." && (display.textContent.includes("."))) return;
+    if (display.textContent.length < 9) {
+        display.textContent += n;
+    }
 }
 
 clearBtn.addEventListener('click', clear);
@@ -136,8 +164,24 @@ backBtn.addEventListener('click', back);
 signBtn.addEventListener('click', sign);
 smileBtn.addEventListener('click', smile);
 
-plusBtn.addEventListener('click', queueUp)
-minusBtn.addEventListener('click', queueUp)
-mulBtn.addEventListener('click', queueUp)
-divBtn.addEventListener('click', queueUp)
-resBtn.addEventListener('click', queueUp)
+plusBtn.addEventListener('click', queueUp);
+minusBtn.addEventListener('click', queueUp);
+mulBtn.addEventListener('click', queueUp);
+divBtn.addEventListener('click', queueUp);
+resBtn.addEventListener('click', queueUp);
+
+window.addEventListener('keydown', queueUpKbd);
+window.addEventListener('keydown', numberClickKbd);
+
+window.addEventListener('keydown', utilKbd);
+
+function utilKbd (event) {
+    if (!(["Escape", "Backspace"].includes(event.key))) {
+        return;
+    }
+    if (event.key == "Escape") {
+        clear();
+    } else if (event.key == "Backspace") {
+        back();
+    }
+}
