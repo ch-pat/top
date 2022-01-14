@@ -1,4 +1,5 @@
 # Exercise 11 - Get the Titles!
+## [Link to solution](./getTheTitles.js)
 
 You are given an array of objects that represent books with an author and a title that looks like this:
 
